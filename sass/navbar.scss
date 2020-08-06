@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+    line-height: 1.5em !important;
+    font-size: 93.75% !important;
+    background-color: #101010 !important;
+}
+
+.full_page {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+
+
+.hamburger {
+    font-size: 27px;
+    transition: 0.5s;
+    position: fixed;
+    visibility: hidden;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+    margin: 12px 15px;
+    z-index: 55;
+    transition: 0.4s;
+
+    .hamburger-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active .hamburger-inner {
+            width: 25px;
+            background-color: transparent;
+
+            &:before,
+            &:after {
+                top: 0;
+                width: 25px;
+            }
+
+            &:before {
+                transform: rotate(135deg);
+            }
+
+            &:after {
+                transform: rotate(-135deg);
+            }
+        }
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        content: "";
+        display: block;
+        background-color: white;
+    }
+
+    .hamburger-inner::before {
+        top: -8px;
+    }
+
+    .hamburger-inner::after {
+        bottom: -8px;
+    }
+}
+
+.page_aside::-webkit-scrollbar, .page_main::-webkit-scrollbar {
+    width: 0;
+}
+
+.page_aside {
+    padding: 2rem;
+    background-color: black;
+    height: 100vh;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    display: grid;
+    transition: 0.4s;
+    overflow-y: scroll;
+    overflow-x: unset;
+    grid-area: nav;
+
+    .side_navbar,
+    .logo {
+        margin-bottom: 5rem;
+    }
+
+    .logo {
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        small {
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+
+        }
+    }
+
+    ul {
+        margin-left: 0;
+    }
+
+    .side_navbar {
+        .nav_list {
+            li {
+                list-style: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+
+                a {
+                    text-decoration: none;
+                    padding-bottom: 10px;
+                    margin-top: 10px;
+                    color: #999 !important;
+                    font-size: 17px;
+                    display: block;
+                }
+
+                a.active,
+                a:hover {
+                    color: white !important;
+                }
+            }
+        }
+    }
+
+    .navbar_footer {
+        align-self: center;
+
+        .icons {
+            text-align: center;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-right: 10px;
+                font-size: 20px;
+            }
+        }
+
+        div {
+            text-align: center;
+        }
+    }
+
+}
+
+.page_main {
+
+    .row{
+        margin: 0;
+    }
+    
+    .footer {
+        padding: 2rem 0;
+
+        .row {
+            text-align: center;
+            color: #999;
+
+            h1 {
+                color: white;
+            }
+
+            small {
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 3px;
+                margin-bottom: 20px;
+                display: block;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .page_aside {
+        width: 270px !important;
+        transform: translateX(-270px);
+
+        .side_navbar,
+        .logo {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .nav_mobile {
+        transform: translateX(0);
+        width: 270px;
+        position: fixed;
+        display: grid;
+    }
+
+    .hamburger {
+        visibility: visible;
+    }
+
+    .nav_button {
+        transform: translateX(270px);
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .page_aside {
+        width: 30%;
+    }
+
+}

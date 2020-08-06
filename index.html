@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photographer</title>
+  <link rel="stylesheet" href="sass/style.css" />
+  <link rel="stylesheet" href="sass/navbar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="full_page">
+  <button class="hamburger" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <aside class="page_aside">
+    <div class="logo">
+      <a href="#">
+        <img src="img/logo.png" alt="" />
+      </a>
+      <h1>
+        <a href="#">Annie McCury</a>
+      </h1>
+      <small>Photographer</small>
+    </div>
+    <nav class="side_navbar">
+      <ul class="nav_list">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="navbar_footer">
+      <ul class="icons">
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+      <div>
+        &copy; 2020
+      </div>
+    </div>
+  </aside>
+
+  <section class="page_main">
+    <div class="carousel carousel-fade slide" id="myCarousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/slider/01.jpg" alt="photographer" />
+        </div>
+        <div class="item">
+          <img src="img/slider/02.jpg" alt="photographer" />
+        </div>
+        <div class="item">
+          <img src="img/slider/01.jpg" alt="photographer" />
+        </div>
+        <div class="item">
+          <img src="img/slider/02.jpg" alt="photographer" />
+        </div>
+      </div>
+    </div>
+
+    <div class="text_wrapper">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-12">
+          <p>
+            While there is perhaps a province in which the photograph can
+            tell us nothing more than what we see with our own eyes, there
+            is another in which it proves to us how little our eyes permit
+            us to see.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="row photos imglist">
+        <div class="img_icon col-lg-4 col-md-6 col-12 img_wrapper">
+          <a href="img/01.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/01.jpg" alt="" />
+          </a>
+          <div class="icon_wrapper">
+            <span><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/02.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/02.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/03.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/03.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/04.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/04.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/05.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/05.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/06.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/06.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/07.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/07.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/08.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/08.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/09.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/09.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/10.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/10.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/11.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/11.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/12.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/12.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/13.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/13.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/15.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/15.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/16.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/16.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/17.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/17.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/18.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/18.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+          <a href="img/19.jpg" data-fancybox="images" data-caption="My caption">
+            <img src="img/19.jpg" alt="" />
+            <div class="icon_wrapper">
+              <span><i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row more_img">
+        <div class="col-12">
+          <div class="show_more_container">
+            <div class="row photos imglist" id="photos">
+              <div class="img_icon col-lg-4 col-md-6 col-12 img_wrapper">
+                <a href="img/01.jpg" data-fancybox="images" data-caption="My caption">
+                  <img src="img/01.jpg" alt="" />
+                </a>
+                <div class="icon_wrapper">
+                  <span><i class="fa fa-search"></i></span>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+                <a href="img/02.jpg" data-fancybox="images" data-caption="My caption">
+                  <img src="img/02.jpg" alt="" />
+                  <div class="icon_wrapper">
+                    <span><i class="fa fa-search"></i></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+                <a href="img/03.jpg" data-fancybox="images" data-caption="My caption">
+                  <img src="img/03.jpg" alt="" />
+                  <div class="icon_wrapper">
+                    <span><i class="fa fa-search"></i></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+                <a href="img/04.jpg" data-fancybox="images" data-caption="My caption">
+                  <img src="img/04.jpg" alt="" />
+                  <div class="icon_wrapper">
+                    <span><i class="fa fa-search"></i></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+                <a href="img/05.jpg" data-fancybox="images" data-caption="My caption">
+                  <img src="img/05.jpg" alt="" />
+                  <div class="icon_wrapper">
+                    <span><i class="fa fa-search"></i></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+                <a href="img/06.jpg" data-fancybox="images" data-caption="My caption">
+                  <img src="img/06.jpg" alt="" />
+                  <div class="icon_wrapper">
+                    <span><i class="fa fa-search"></i></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+                <a href="img/07.jpg" data-fancybox="images" data-caption="My caption">
+                  <img src="img/07.jpg" alt="" />
+                  <div class="icon_wrapper">
+                    <span><i class="fa fa-search"></i></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+                <a href="img/08.jpg" data-fancybox="images" data-caption="My caption">
+                  <img src="img/08.jpg" alt="" />
+                  <div class="icon_wrapper">
+                    <span><i class="fa fa-search"></i></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 img_icon img_wrapper">
+                <a href="img/09.jpg" data-fancybox="images" data-caption="My caption">
+                  <img src="img/09.jpg" alt="" />
+                  <div class="icon_wrapper">
+                    <span><i class="fa fa-search"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="more_img_icon">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-12">
+          <h1>Annie McCury</h1>
+          <small>Photographer</small>
+          <div>
+            &copy; 2020
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+
+  <script>
+
+     // AOS ANIMATION
+     AOS.init({
+      duration: 1200,
+      initClassName: 'aos-init',
+      animatedClassName: 'aos-animate',
+    });
+
+    // MOBILE NAVIGATION MENU
+    let hamburger = document.querySelector(".hamburger");
+    let pageAside = document.querySelector(".page_aside");
+    let hamburgerBox = document.querySelector(".hamburger-box");
+    let pageMain = document.querySelector(".page_main");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("nav_button");
+      pageAside.classList.toggle("nav_mobile");
+      hamburgerBox.classList.toggle("active");
+      pageMain.classList.toggle("page_main_style");
+    });
+
+    // IMG CAROUSEL
+    $(document).ready(function () {
+      $(".carousel").carousel({
+        interval: 4000,
+      });
+    });
+
+    // SHOW MORE IMAGES
+    var moreImgIcone = document.querySelector(".more_img_icon");
+
+    moreImgIcone.addEventListener("click", () => {
+      document.querySelector(".show_more_container").style.display = "block";
+      moreImgIcone.style.display = "none";
+    });
+  </script>
+</body>
+
+</html>
